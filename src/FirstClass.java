@@ -1,4 +1,6 @@
 
+import firstPackage.*;
+
 public class FirstClass {
 
     public static void main(String[] s) {
@@ -11,49 +13,10 @@ public class FirstClass {
                 o.setI(i);
                 o.setJ(j);
                 System.out.print(o.mult());
-               // System.out.print(o.plus());
+                // System.out.print(o.plus());
                 System.out.print(" ");
             }
             System.out.println();
         }
-
-
     }
 }
-
-class SecondClass {
-
-    private int i;
-    private int j;
-
-    public SecondClass(int i, int j) {
-        this.i = i;
-        this.j = j;
-    }
-
-
-    public int getI() {
-        return i;
-    }
-
-    public void setI(int i) {
-        this.i = i;
-    }
-
-    public int getJ() {
-        return j;
-    }
-
-    public void setJ(int j) {
-        this.j = j;
-    }
-
-    public  int plus() {
-        return i + j;
-    }
-
-    public  int mult() {
-        return i * j;
-    }
-}
-
